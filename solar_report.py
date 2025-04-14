@@ -16,6 +16,7 @@ APP_PASSWORD = os.environ['APP_PASSWORD']
 SMTP_SERVER = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
 SMTP_PORT = int(os.environ.get('SMTP_PORT', '587'))
 IMAP_SERVER = os.environ.get('IMAP_SERVER', 'imap.gmail.com')
+DEST=os.environ['DEST']
 
 # Configuration des logs
 logging.basicConfig(level=logging.INFO)
@@ -362,7 +363,7 @@ def main():
         installations_nulle, regions_data = analyser_donnees(df)
         if installations_nulle is not None:
             envoyer_email(
-                EMAIL,  # Envoyer à vous-même
+                DEST,  # Envoyer à vous-même
                 f"Rapport photovoltaïque {datetime.now().strftime('%d/%m/%Y')}",
                 installations_nulle,
                 regions_data
