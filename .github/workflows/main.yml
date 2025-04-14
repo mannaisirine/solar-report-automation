@@ -2,7 +2,7 @@ name: Daily Solar Report
 
 on:
   schedule:
-    - cron: '24 09 * * *'  # 10h heure de Tunis (UTC+2)
+    - cron: '00 12 * * *'  # 10h heure de Tunis (UTC+2)
   workflow_dispatch:
 
 jobs:
