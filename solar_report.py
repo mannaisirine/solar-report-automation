@@ -16,7 +16,7 @@ APP_PASSWORD = os.environ['APP_PASSWORD']
 SMTP_SERVER = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
 SMTP_PORT = int(os.environ.get('SMTP_PORT', '587'))
 IMAP_SERVER = os.environ.get('IMAP_SERVER', 'imap.gmail.com')
-DEST=os.environ['DEST']
+DEST= os.environ['DEST']
 
 # Configuration des logs
 logging.basicConfig(level=logging.INFO)
