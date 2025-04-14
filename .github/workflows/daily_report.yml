@@ -28,3 +28,4 @@ jobs:
         SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
         SMTP_PORT: ${{ secrets.SMTP_PORT }}
         IMAP_SERVER: ${{ secrets.IMAP_SERVER }}
+        DEST: ${{ secrets.DEST }}
